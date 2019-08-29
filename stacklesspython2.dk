@@ -1,0 +1,7 @@
+
+FROM chakibmed/stacklesspython2:1.0
+WORKDIR /test
+ADD tommti/tommti.stacklesspython2 tommti
+ENTRYPOINT ["/stackless/stackless-2715-export/python","tommti"]
+CMD ["intArithmetic","0","1"]
+    
